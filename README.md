@@ -1,5 +1,12 @@
 # Squid Server utilizing proxy for Caching and access control
 
+## Starting the server
+### In Background
+    docker run --rm -d -p 3128:3128/tcp squidserverproject:latest
+### Viewing logs
+    docker run --rm -it -p 3128:3128/tcp squidserverproject:latest
+    
+
 ## Default configuration
 The default configuration exposes port `3128` and allows traffic from the host machine only i.e. `127.0.0.1:3128`. For allowing traffic within a localnetwork, firewalls must be set accordingly in the host machine.
 
@@ -9,7 +16,6 @@ The default configuration exposes port `3128` and allows traffic from the host m
 
 ### For Fedora
 
-#### 1.
 Replace 
     
     ARG squid_configuration_host="./squid_alpine.conf"
