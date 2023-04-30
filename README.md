@@ -34,7 +34,7 @@ With
 ## Changing the configuration
 Before build stage, the configuration for respective distros can be changed from the source file.
 
-Full documentation is present in [squid_alpine.conf](./squid_alpine.conf)
+Full documentation is present in [squid_alpine.conf](./configs/squid_alpine.conf)
 
 The config used at runtime is `/etc/squid/squid_new.conf` and can be changed through container.
 ![Changing Configuration Screenshot](./images/changing_config.png)
